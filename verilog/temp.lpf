@@ -1,0 +1,56 @@
+BLOCK RESETPATHS;
+BLOCK ASYNCPATHS;
+
+LOCATE COMP "fastclk" SITE "P3";
+IOBUF PORT "fastclk" IO_TYPE = LVCMOS33 ;
+FREQUENCY PORT "fastclk" 25.0 MHz;
+
+LOCATE COMP "rstn" SITE "F4";
+IOBUF PORT "rstn" IO_TYPE = LVCMOS33 ;
+
+LOCATE COMP "sda" SITE "D17";
+IOBUF PORT "sda" IO_TYPE = LVCMOS33 ;
+
+LOCATE COMP "scl" SITE "E17";
+IOBUF PORT "scl" IO_TYPE = LVCMOS33 ;
+
+//E
+LOCATE COMP "segment_out[7]" SITE "E18";		
+IOBUF PORT "segment_out[7]" IO_TYPE = LVCMOS33;
+
+//D
+LOCATE COMP "segment_out[6]" SITE "F18";
+IOBUF PORT "segment_out[6]" IO_TYPE = LVCMOS33;
+
+//C
+LOCATE COMP "segment_out[5]" SITE "G18";
+IOBUF PORT "segment_out[5]" IO_TYPE = LVCMOS33;
+
+//DOT
+LOCATE COMP "segment_out[4]" SITE "J18";
+IOBUF PORT "segment_out[4]" IO_TYPE = LVCMOS33;
+
+//B
+LOCATE COMP "segment_out[3]" SITE "G16";
+IOBUF PORT "segment_out[3]" IO_TYPE = LVCMOS33;
+
+//A
+LOCATE COMP "segment_out[2]" SITE "L5";
+IOBUF PORT "segment_out[2]" IO_TYPE = LVCMOS33;
+
+//F
+LOCATE COMP "segment_out[1]" SITE "H17";
+IOBUF PORT "segment_out[1]" IO_TYPE = LVCMOS33;
+
+//G
+LOCATE COMP "segment_out[0]" SITE "J17";
+IOBUF PORT "segment_out[0]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "segment_enable[0]" SITE "D1";
+IOBUF PORT "segment_enable[0]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "segment_enable[1]" SITE "C1";
+IOBUF PORT "segment_enable[1]" IO_TYPE = LVCMOS33;
+
+LOCATE COMP "segment_enable[2]" SITE "C2";
+IOBUF PORT "segment_enable[2]" IO_TYPE = LVCMOS33;
